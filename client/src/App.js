@@ -1,10 +1,10 @@
 import React from 'react';
-import Customers from './components/customers/customers';
+import Logo from './components/landingPage';
 
 function App() {
   return (
     <div>
-      <Customers />
+      <Logo />
     </div>
   );
 }
