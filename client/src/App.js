@@ -1,21 +1,25 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import LoginPage from './pages/LoginPage/loginPage';
-import ViewEvents from './pages/ViewEvents/viewEvents';
-import AdminPage from './pages/AdminPage/AdminPage';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <div>
-        <Switch>
-          <Route exact path="/" component={LoginPage} />
-          <Route exact path="/dashboard" component={AdminPage} />
-          <Route exact path="/event/:id" component={ViewEvents} />
-        </Switch>
-      </div>
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
